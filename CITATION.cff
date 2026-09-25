@@ -1,1 +1,31 @@
+cff-version: 1.2.0
+message: "If you use Earth in Extremes or adapt its analysis workflows, please cite this repository."
+type: software
 
+title: "Earth in Extremes"
+
+authors:
+  - family-names: "Kelvin"
+    given-names: "Jaya"
+
+abstract: >-
+  Earth in Extremes is an open and reproducible project for investigating
+  significant meteorological, oceanographic, hydrological, and related
+  natural-hazard events using publicly accessible data and documented
+  scientific methods.
+
+repository-code: "https://github.com/jayakelvin/earth-in-extremes"
+
+license: MIT
+
+keywords:
+  - meteorology
+  - oceanography
+  - extreme weather
+  - natural hazards
+  - atmospheric science
+  - climate
+  - geospatial analysis
+  - open data
+  - reproducible research
+  - Python
