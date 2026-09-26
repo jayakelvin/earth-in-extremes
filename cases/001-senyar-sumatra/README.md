@@ -80,9 +80,9 @@ Senyar developed at an unusually low latitude in the Strait of Malacca.
 
 The Coriolis parameter is
 
-\[
+```math
 f = 2\Omega\sin\phi
-\]
+```
 
 and becomes small close to the equator.
 
