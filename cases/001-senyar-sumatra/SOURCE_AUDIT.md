@@ -95,7 +95,56 @@ Status:
 
 Primary source:
 
-IMD / RSMC New Delhi 2025 system archive.
+IMD / RSMC New Delhi 2025 system archive:
+
+https://rsmcnewdelhi.imd.gov.in/system-archive.php?internal_menu=MzQ%3D&year=MjAyNQ%3D%3D
+
+The archive separates products by issue and analysis time. I will preserve that distinction when reconstructing the chronology so that an analysed position is not confused with a forecast position valid at a later time.
+
+### IMD operational chronology
+
+I reviewed the RSMC outlooks from 20–25 November and all 15 tropical-cyclone advisories issued for the Senyar period. The operational sequence is:
+
+| Analysis time | Operational status |
+|---|---|
+| 2025-11-20 03:00 UTC | An upper-air cyclonic circulation was present over the central Strait of Malacca. |
+| 2025-11-22 03:00 UTC | A low-pressure area had formed over the Strait of Malacca and adjoining South Andaman Sea. |
+| 2025-11-23 03:00 UTC | The system had become a well-marked low-pressure area. |
+| 2025-11-24 03:00 UTC | The well-marked low lay over Malaysia and the adjoining Strait of Malacca. |
+| 2025-11-25 03:00 UTC | The system had intensified into a depression near 5.4°N, 99.7°E. |
+| 2025-11-25 18:00 UTC | It had intensified into a deep depression near 5.1°N, 98.5°E. |
+| 2025-11-26 00:00 UTC | It had intensified into Cyclonic Storm Senyar near 5.0°N, 98.0°E. |
+| 2025-11-26 02:00–03:00 UTC | Senyar crossed the Indonesian coast near 4.9°N with winds of 70–80 km h⁻¹, gusting to 90 km h⁻¹. |
+| 2025-11-27 00:00 UTC | Senyar had weakened into a deep depression near 3.7°N, 99.2°E. |
+| 2025-11-27 06:00 UTC | The system had weakened into a depression near 3.6°N, 99.8°E. |
+| 2025-11-27 18:00 UTC | The remnant depression had weakened into a well-marked low-pressure area. IMD placed the circulation near 3.7°N, 101.2°E and identified this as the final update. |
+
+Primary operational sources:
+
+- [20 November tropical weather outlook](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_4a31e7_Tropical_Weather_Outlook_based_on_0300_UTC_of_20.11.2025.pdf)
+- [22 November tropical weather outlook](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_ad30d8_Tropical_Weather_Outlook_based_on_0300_UTC_of_22.11.2025.pdf)
+- [23 November tropical weather outlook](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_f01e40_Tropical_Weather_Outlook_based_on_0300_UTC_of_23.11.2025.pdf)
+- [24 November tropical weather outlook](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_c63b67_Tropical_Weather_Outlook_based_on_0300_UTC_of_24.11.2025.pdf)
+- [25 November special outlook at 03:00 UTC](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_ef719a_Special_Tropical_Weather_Outlook_based_on_0300_UTC_of_25.11.2025.pdf)
+- [25 November special outlook at 18:00 UTC](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_c9f580_Special_Tropical_Weather_Outlook_based_on_1800_UTC_of_25.11.2025.pdf)
+- [RSMC advisory No. 1](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_ddcfe3_Tropical_Cyclone_Advisory_NO._1_based_0000_UTC_of_26.11.2025.pdf)
+- [RSMC advisory No. 2](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_24441d_Tropical_Cyclone_Advisory_NO._2_based_0300_UTC_of_26.11.2025.pdf)
+- [RSMC advisory No. 9](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_1f537f_TROPICAL_CYCLONE_ADVISORY_NO.9_based_0000_UTC_of_27.11.2025.pdf)
+- [RSMC advisory No. 11](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_60161c_TROPICAL_CYCLONE_ADVISORY_NO.11_based_0600_UTC..._of_27.11.2025.pdf)
+- [RSMC advisory No. 15](https://rsmcnewdelhi.imd.gov.in/uploads/archive/2/2_2a3242_TROPICAL_CYCLONE_ADVISORY_NO.15_based_1800_UTC_of_27.11.2025.pdf)
+
+### Operational analyses and the preliminary reference track
+
+The operational analyses and preliminary track agree on the principal stage transitions and most analysed positions, but they are not identical datasets.
+
+Material differences found during the review include:
+
+- the 03:00 and 06:00 UTC operational analyses on 25 November reported an estimated central pressure of 1006 hPa, while the preliminary track gives 1004 hPa
+- the 21:00 UTC operational analysis on 26 November placed Senyar at 3.8°N, 98.6°E with an estimated central pressure of 999 hPa; the preliminary track gives 3.8°N, 98.8°E and 1001 hPa
+- the operational sequence contains a 09:00 UTC position on 27 November at 3.6°N, 100.3°E, which is not present as a positional record in the preliminary track
+- the final operational update placed the remnant circulation near 3.7°N, 101.2°E at 18:00 UTC on 27 November; the workbook records the weakening as narrative text without a corresponding positional track row
+
+These differences are not errors to be silently reconciled. I use the preliminary workbook as the reference track and retain the advisories as the record of what IMD analysed and forecast operationally at each issue time.
 
 ---
 
@@ -105,15 +154,15 @@ BMKG reported that Seed 95B had developed into **Tropical Cyclone Senyar by 07:0
 
 At that analysis time BMKG placed the centre near:
 
-\[
+```math
 5.0^\circ \mathrm{N},\;98.0^\circ \mathrm{E}
-\]
+```
 
 with approximately:
 
 - minimum central pressure: **998 hPa**
 - maximum wind: **43 kt**
-- movement: westward at approximately **10 km h\(^{-1}\)**
+- movement: westward at approximately **10 km h⁻¹**
 
 Status:
 
@@ -187,7 +236,7 @@ Do not use:
 
 BMKG's December 2025 climate bulletin reports:
 
-**411 mm day\(^{-1}\)**
+**411 mm day⁻¹**
 
 at:
 
@@ -215,10 +264,10 @@ Status:
 
 BMKG reported extreme rainfall during 25–27 November including:
 
-- Aceh Utara: **310.8 mm day\(^{-1}\)**
-- Medan: **262.2 mm day\(^{-1}\)**
-- Tapanuli Tengah: **229.7 mm day\(^{-1}\)**
-- Padang Pariaman: **154 mm day\(^{-1}\)**
+- Aceh Utara: **310.8 mm day⁻¹**
+- Medan: **262.2 mm day⁻¹**
+- Tapanuli Tengah: **229.7 mm day⁻¹**
+- Padang Pariaman: **154 mm day⁻¹**
 
 Status:
 
@@ -248,21 +297,21 @@ Selected BMKG values include:
 
 Early November:
 
-\[
+```math
 DMI \approx -1.70
-\]
+```
 
 Second dekad:
 
-\[
+```math
 DMI \approx -0.57
-\]
+```
 
 Monthly November value reported later:
 
-\[
+```math
 DMI \approx -0.83
-\]
+```
 
 Status:
 
@@ -290,21 +339,21 @@ Reported indices were approximately:
 
 Early November:
 
-\[
+```math
 -0.68
-\]
+```
 
 Second dekad:
 
-\[
+```math
 -0.82
-\]
+```
 
 Monthly November:
 
-\[
+```math
 -0.77
-\]
+```
 
 Status:
 
@@ -891,8 +940,8 @@ Use:
 
 ## Still to verify before quantitative analysis
 
-- final authoritative Senyar best track
-- wind averaging conventions across agencies
+- finalized IMD 2025 best track, which is not yet available in the archive
+- wind averaging conventions for non-IMD agencies used in later comparisons
 - complete BMKG station metadata
 - exact open-data licence for each BMKG product
 - final rainfall station list
@@ -907,20 +956,8 @@ Use:
 
 # Next step
 
-Build the **data inventory**.
+Begin the **provisional IMERG Late V07 precipitation workflow**.
 
-For every dataset considered for analysis, record:
+The preliminary IMD reference track has been extracted, compared with the operational chronology and checked visually. The first IMERG window is now fixed at 20 November–2 December 2025 over `90°E–110°E, 10°S–12°N`.
 
-- scientific purpose
-- provider
-- exact product
-- variable
-- resolution
-- temporal coverage
-- licence
-- retrieval method
-- expected file size
-- limitations
-- whether it is essential or optional
-
-No large data download should begin until that inventory is complete.
+NASA's live catalogue currently ends the preferred IMERG Final V07 half-hourly collection on 30 September 2025. Late V07 covers the Senyar period, but it lacks the Final Run's monthly gauge adjustment. Late V07 has therefore been selected for provisional workflow development, with replacement by Final V07 required before publication-level rainfall conclusions. The next step is authenticated retrieval and structural inspection of one source granule.

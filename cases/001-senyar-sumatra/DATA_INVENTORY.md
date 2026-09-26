@@ -2,7 +2,7 @@
 
 ## Case 001 — Cyclone Senyar and the 2025 Sumatra Floods
 
-**Status:** dataset planning
+**Status:** reference track established; first precipitation retrieval defined
 
 This document defines the datasets considered for Case 001 before large-scale downloading begins.
 
@@ -233,6 +233,10 @@ IMERG is a satellite-based precipitation estimate.
 It must not be described as a rain-gauge observation.
 
 Comparison with BMKG gauges should consider the difference between a point measurement and a 0.1° grid-cell estimate.
+
+**Availability checked 2026-09-26**
+
+The NASA CMR catalogue currently ends the Final V07 half-hourly collection on 30 September 2025. Final Run granules for the Senyar period are therefore not yet available through the catalogued collection. Late Run V07 granules are available, but they will not be treated as equivalent to the gauge-adjusted Final Run. The defined retrieval and live catalogue check are documented in `metadata/gpm_imerg.md`.
 
 ---
 
@@ -870,7 +874,7 @@ The data filename alone is not considered sufficient provenance.
 
 # 19. First download
 
-The first dataset to retrieve will be:
+The first dataset retrieved is:
 
 **IMD / RSMC New Delhi Senyar operational track and chronology.**
 
@@ -878,4 +882,6 @@ Reason:
 
 It is small, authoritative, and establishes the temporal framework used by every subsequent dataset.
 
-No atmospheric or precipitation analysis should begin until the storm chronology and reference timestamps are fixed.
+The preliminary IMD 2025 best-track workbook is stored unchanged outside version control. A documented processing script extracts 17 positional Senyar records and preserves their source worksheet row numbers in the processed dataset.
+
+The operational chronology still requires verification against archived IMD bulletins. No atmospheric or precipitation analysis should begin until that comparison is complete and the reference timestamps are fixed.

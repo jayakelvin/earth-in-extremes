@@ -1,2 +1,6 @@
 pandas
 openpyxl
+matplotlib
+cartopy
+earthaccess
+h5py

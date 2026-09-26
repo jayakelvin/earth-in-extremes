@@ -2,7 +2,7 @@
 
 ## Status
 
-**Research protocol — analysis not yet started**
+**Preliminary reference chronology established**
 
 This case is currently being developed. Scientific conclusions should not be inferred from the working hypotheses below.
 
@@ -368,8 +368,28 @@ A scientifically defensible negative result is preferable to an unsupported posi
 
 # Current status
 
-**Protocol established.**
+**Reference track established and visually checked.**
+
+The preliminary IMD 2025 best-track workbook has been retained unchanged. Its 17 positional Senyar records have been extracted to a reproducible processed CSV with source-row provenance and documented quality-control checks.
+
+The IMD operational sequence from the precursor circulation on 20 November to the remnant well-marked low on 27 November has been reviewed separately. Operational analyses and forecasts are not mixed into the preliminary reference track.
+
+## Reference-track visual quality control
+
+![Preliminary IMD reference track and intensity of Cyclonic Storm Senyar](figures/imd_senyar_track_qc.png)
+
+**Figure 1 | Preliminary IMD reference track and intensity of Cyclonic Storm Senyar.** **a,** Reported positions and classifications from 25 November 03:00 UTC to 27 November 15:00 UTC. The landfall marker is taken from the separate narrative row in the same workbook, which places landfall near `4.900°N, 97.750°E` between 02:00 and 03:00 UTC on 26 November. **b,** Maximum sustained wind under the IMD 3-minute averaging convention. **c,** Reported central pressure. Lines connect consecutive observations to make the sequence legible; they are not interpolated positions or intensity estimates. The figure preserves the preliminary reference track and does not add operational-advisory positions. Coastlines and national boundaries are from Natural Earth at 1:10-million scale.
+
+The visual check confirms that the extracted sequence is geographically and temporally coherent: Senyar moved westward to the northern Sumatran coast, tracked south-eastward across northern Sumatra, and then moved eastward through the Strait of Malacca while weakening. This is a quality-control observation, not an attribution of motion or intensity change to a physical mechanism.
+
+The figure is generated reproducibly with:
+
+```powershell
+.\.venv\Scripts\python.exe cases\001-senyar-sumatra\scripts\plot\plot_imd_senyar_track.py
+```
+
+The script uses Leelawadee throughout and exports editable vector versions (`PDF` and `SVG`) alongside a 600-dpi `PNG` preview.
 
 Next step:
 
-**Build and verify the authoritative event chronology and source inventory before downloading analysis datasets.**
+**Authenticate NASA Earthdata access, retrieve one IMERG Late V07 source granule and inspect its actual structure before defining regional subsetting.**
