@@ -1,8 +1,8 @@
-# Raw and intermediate scientific data
+# Scientific data
 **/data/raw/
 **/data/interim/
 
-# Common meteorological / geospatial data formats
+# Large meteorological/geospatial files
 *.nc
 *.nc4
 *.grib
@@ -13,16 +13,17 @@
 *.tif
 *.tiff
 
-# Temporary files
-*.tmp
-*.log
-
-# Python
+# Python environments and cache
+.venv/
+venv/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 
-# Environment
+# Environment variables / credentials
 .env
-.venv/
-venv/
+*.env
+
+# Temporary files
+*.tmp
+*.log

@@ -2,30 +2,30 @@
 
 ## Provider
 
-India Meteorological Department  
+India Meteorological Department (IMD)  
 Regional Specialised Meteorological Centre – Tropical Cyclones, New Delhi
 
 ## Dataset
 
-Best Tracks Data (1982–2026)
+**Best Tracks Data (1982–2026)**
 
 ## 2025 status
 
-Preliminary.
+**Preliminary**
 
-The IMD archive identifies the 2025 data as:
+The IMD Best Track archive identifies the 2025 dataset as:
 
 > Preliminary Tracks of Cyclones and Depressions for the year 2025
 
-The data should therefore not be described as final best-track data until IMD
-publishes the final post-season dataset.
+I therefore treat the 2025 records used in this case as preliminary rather than as a finalized post-season best track.
+
+If IMD publishes a finalized 2025 dataset, I will compare the updated Senyar records with the preliminary version used here and document any changes that affect the analysis.
 
 ## Purpose in Case 001
 
-Reference chronology and track of Cyclonic Storm Senyar.
+I use this dataset to establish the reference chronology and track of Cyclonic Storm Senyar.
 
-The dataset will be used to derive a machine-readable Senyar track containing,
-where available:
+Where available, the extracted Senyar dataset contains:
 
 - UTC timestamp
 - latitude
@@ -34,24 +34,31 @@ where available:
 - maximum sustained wind
 - central pressure
 
+The reference track provides the temporal framework for the precipitation, oceanic, atmospheric, and impact analyses developed later in the case.
+
 ## Source
 
-IMD / RSMC New Delhi Best Track archive.
+**Provider:** IMD / RSMC New Delhi
+
+**Best Track archive:**  
+https://rsmcnewdelhi.imd.gov.in/report.php?internal_menu=MzM
+
+**Direct workbook:**  
+https://rsmcnewdelhi.imd.gov.in/download.php?path=uploads%2Fbest-track%2F78b4b0_Best_Tracks__Data__1982-2026_.xlsx
+
+## Original file
+
+`78b4b0_Best_Tracks__Data__1982-2026_.xlsx`
+
+The raw workbook is retained unchanged.
 
 ## Access date
 
-2026-09-26
+**2026-09-26**
 
-## Processing
+## Local storage
 
-The source workbook will remain unchanged.
+The original workbook is stored locally under:
 
-A processing script will extract only records associated with Senyar and write
-a small processed CSV for use by subsequent analyses.
-
-## Important distinction
-
-The reference track is separate from IMD operational forecast bulletins.
-
-Operational advisories will later be archived independently for forecast
-verification and reconstruction of the evolving forecast.
+```text
+data/raw/imd/78b4b0_Best_Tracks__Data__1982-2026_.xlsx
