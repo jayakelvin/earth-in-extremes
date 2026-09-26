@@ -210,13 +210,13 @@ Accumulated variables must be defined precisely.
 
 For precipitation, distinguish between a fixed-period total and a rolling accumulation.
 
-For hourly precipitation \(P(t)\), a rolling 24-hour accumulation can be written as
+For hourly precipitation $P(t)$, a rolling 24-hour accumulation can be written as:
 
-\[
+```math
 P_{24}(t)
 =
 \sum_{i=0}^{23} P(t-i)
-\]
+```
 
 for hourly data.
 
@@ -281,11 +281,16 @@ Where possible, preserve the forecast exactly as it existed before the event.
 
 Relevant quantities may include:
 
-\[
-E_d = d\left(\mathbf{x}_{forecast},\mathbf{x}_{observed}\right)
-\]
+```math
+E_d
+=
+d\left(
+\mathbf{x}_{forecast},
+\mathbf{x}_{observed}
+\right)
+```
 
-for positional error, where \(d\) represents geographical distance.
+for positional error, where $d$ represents geographical distance.
 
 Additional metrics may include:
 
@@ -307,13 +312,13 @@ Forecast verification must not rely on forecasts retrieved after they have been 
 
 An anomaly should always specify its reference climatology.
 
-For a variable \(X\),
+For a variable $X$:
 
-\[
+```math
 X' = X - \overline{X}_{clim}
-\]
+```
 
-where \(\overline{X}_{clim}\) is the climatological reference value.
+where $\overline{X}_{clim}$ is the climatological reference value.
 
 The reference period, dataset, spatial resolution, and temporal aggregation should be stated.
 
