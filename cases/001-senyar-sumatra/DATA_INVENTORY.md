@@ -165,15 +165,15 @@ IMERG Final Run Version 07.
 
 Spatial:
 
-\[
+```math
 0.1^\circ \times 0.1^\circ
-\]
+```
 
 Temporal:
 
-\[
-30\text{ minutes}
-\]
+```math
+30\ \mathrm{minutes}
+```
 
 NASA describes IMERG as combining precipitation estimates from multiple passive-microwave and infrared sensors. The Final Run additionally incorporates monthly gauge information and is intended as the research-quality retrospective product.
 
@@ -187,10 +187,10 @@ A longer window may later be used for antecedent rainfall.
 
 Approximately:
 
-\[
-90^\circ E-110^\circ E,\quad
+```math
+90^\circ E-110^\circ E,\qquad
 10^\circ S-12^\circ N
-\]
+```
 
 The domain may be expanded where necessary.
 
@@ -250,9 +250,9 @@ Copernicus Climate Change Service / ECMWF.
 
 Standard gridded ERA5:
 
-\[
+```math
 0.25^\circ \times 0.25^\circ
-\]
+```
 
 Temporal:
 
@@ -283,9 +283,9 @@ Initial variables:
 
 Potential pressure levels:
 
-\[
-1000,\;925,\;850,\;700,\;500,\;300,\;200\text{ hPa}
-\]
+```math
+1000,\ 925,\ 850,\ 700,\ 500,\ 300,\ 200\ \mathrm{hPa}
+```
 
 Not every variable requires every level.
 
@@ -293,42 +293,46 @@ Not every variable requires every level.
 
 #### Relative vorticity
 
-\[
+```math
 \zeta =
 \frac{\partial v}{\partial x}
 -
 \frac{\partial u}{\partial y}
-\]
+```
 
 #### Horizontal divergence
 
-\[
-\nabla_h\cdot\mathbf{V}
+```math
+\nabla_h \cdot \mathbf{V}
 =
 \frac{\partial u}{\partial x}
 +
 \frac{\partial v}{\partial y}
-\]
+```
 
 #### Vertical wind shear
 
 For example:
 
-\[
-\mathbf{V}_{200}-\mathbf{V}_{850}
-\]
+```math
+\Delta \mathbf{V}
+=
+\mathbf{V}_{200}
+-
+\mathbf{V}_{850}
+```
 
 #### Moisture transport
 
-\[
+```math
 \mathbf{Q}
 =
 \frac{1}{g}
 \int_{p_t}^{p_s}
 q\mathbf{V}\,dp
-\]
+```
 
-where \(q\) is specific humidity and \(\mathbf{V}\) is horizontal wind.
+where $q$ is specific humidity, $\mathbf{V}$ is horizontal wind, $p_s$ is surface pressure, $p_t$ is the selected upper integration pressure, and $g$ is gravitational acceleration.
 
 The exact integration method and pressure bounds must be documented before calculation.
 
@@ -442,9 +446,9 @@ Daily Optimum Interpolation Sea Surface Temperature Version 2.1.
 
 **Resolution**
 
-\[
+```math
 0.25^\circ
-\]
+```
 
 daily.
 
@@ -503,9 +507,9 @@ Diagnose broad-scale tropical convection and assist with tropical-wave analysis.
 
 **Resolution**
 
-\[
-2.5^\circ\times2.5^\circ
-\]
+```math
+2.5^\circ \times 2.5^\circ
+```
 
 daily.
 
@@ -716,7 +720,7 @@ This analysis should be added only after the meteorological core is complete.
 
 # 15. Forecast verification
 
-**Priority:** Later phase**
+**Priority:** Later phase
 
 The first forecast-verification dataset should be:
 
@@ -737,14 +741,14 @@ Potential metrics include:
 
 ### Track error
 
-\[
+```math
 E(t)
 =
 d\left(
 \mathbf{x}_{forecast}(t),
 \mathbf{x}_{observed}(t)
 \right)
-\]
+```
 
 ### Intensity error
 
